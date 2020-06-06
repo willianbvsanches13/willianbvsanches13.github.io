@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 1080px;
+  min-height: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentLeft {
+  width: 30%;
+  min-height: 100%;
+  background: #05BEC0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  background: #FFF;
+  border-radius: 50%;
+  margin: 20px 0px;
+}
+
+.leftTopic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #FFF;
+  padding: 20px 15px;
+  width: 100%;
+}
+
+.leftTopic > div {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.leftTopic > span {
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.leftTopic h4 {
+  margin-left: 20px;
+}
+
+.topicIcon {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.itemTopicIcon {
+  font-size: 22px;
+  margin-left: 15px;
+}
+
+.itemTopic {
+  margin: 10px 0px !important;
+}
+
+.itemTopic span {
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.itemTopic a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.linha {
+  color: #FFF;
+  width: 100%;
+  border: 1.5px solid;
+}
+
+.name {
+  color: #FFF;
+  text-transform: uppercase;
+  padding: 5px 0px;
+  font-weight: 500;
+}
+
+.profession {
+  color: #FFF;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.contentRight {
+  width: 70%;
+  min-height: 100%;
+}
+
