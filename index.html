@@ -38,7 +38,7 @@
           </div>
           <div class="itemTopic">
             <i class="fab fa-whatsapp-square itemTopicIcon" title="Me envie uma mensagem"></i>
-            <span title="Me envie uma mensagem"><a href="https://web.whatsapp.com/send?phone=5549988102020&text=Olá Willian! Estou entrando em contato por meio de sua página." target="_blank">+55 (49) 9 8810-2020</a></span>
+            <span style="cursor: pointer;" title="Me envie uma mensagem" onclick="handleClickWhats()">+55 (49) 9 8810-2020</span>
           </div>
           <div class="itemTopic">
             <i class="fas fa-home itemTopicIcon"></i>
@@ -67,11 +67,29 @@
       <div class="contentRight"></div>
     </div>
   </div>
-    <!-- <p>Willian Sanches - 27 anos</p>
-    <p>Desenvolvedor de software a mais de 7 anos</p>
-    <p>Desenvolvedor Web puro e também usando ReactJS</p>
-    <p>Desenvolvedor Mobile usando ReactNative</p>
-    <p>Desenvolvedor Backend usando NodeJS e PHP</p>
-    <p>Contato: (49) 98810-2020</p> -->
+  <script>
+    function isMobile() { 
+      if( navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+      ){
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    function handleClickWhats() {
+      if (isMobile()) {
+        window.open("https://wa.me/5549988102020?text=Olá Willian! Estou entrando em contato por meio de sua página.", "_blank");
+      } else {
+        window.open("https://web.whatsapp.com/send?phone=5549988102020&text=Olá Willian! Estou entrando em contato por meio de sua página.", "_blank");
+      }
+    }
+  </script>
 </body>
 </html>
